@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+{# Load the tag library #}
+{% load bootstrap3 %}
+
+{# Load CSS and JavaScript #}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+</head>
+<body>
+	<div class="container">
+		<h1>LOGO</h1>
+		{% if client or success %}
+			<div class="row">
+				<div class="col-md-12">{{client.name}} <a href="/logout">( sair )</a> </div>
+			</div>
+			<div class="row">
+				<div class="col-md-2">
+						{% bootstrap_button "Avalie" href="/avaliar"  button_class="btn-primary" %}
+				</div>
+				<div class="col-md-2">
+						{% bootstrap_button "Capacite-se" href="/capacitar"  button_class="btn-primary" %}
+				</div>
+			</div>
+		{% else %}
+			<div class="row">
+				<div class="col-md-12">
+					{% bootstrap_button "Cadastro" href="/cadastro"  button_class="btn-primary" %}
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					{% bootstrap_button "Login" href="/login"  button_class="btn-primary" %}
+				</div>
+			</div>
+		{% endif %}
+	</div>
+</body>
+</html>
