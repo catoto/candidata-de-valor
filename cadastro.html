@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Cadastro</title>
+	
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width"/>
+	
+	<meta content="Oii, sou Daniela Duarte, sou desenvolvedora front-end freelancer. 
+	Venha falar comigo e saber mais sobre meus serviços."
+	name="description"/>
+	
+	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="shortcut icon" href="images/favoricon.png"/>
+	
+	<!-- CSS mainchimp-->
+	<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+	<style>
+					#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+					/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+					   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+	</style>
+
+	<link href="https://fonts.googleapis.com/css?family=Raleway" type="text/css" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com/css?family=Alice|Oswald" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet"/>
+	
+	
+</head>
+
+<body>
+
+	<nav>
+		<div id="pagina">
+			<div class="barra-menu">
+				<div class="btn-menu alinhamento">
+					
+					<a href="/" >
+						<img src="images/logotipo.jpg" alt="logomarca" title="logomarca"/>
+					</a>
+					
+					<a href="#" id="btn-drop" >
+						<input type="checkbox" id="menu-simbolo">
+						<label for="menu-simbolo">&#9776;</label>
+					</a>
+					
+				</div>	
+					<ul id="submenu" class="lista-menu alinhamento">
+						<li><a href="/">Início</a></li>
+						<li><a href="servicos">Cadastrar</a></li>
+						<li><a href="sobre-mim">Sobre </a></li>
+					</ul>
+			</div>
+		</div>
+	</nav>
+	
+	<div class="estrutura-blog">
+		<div class="falecomigo-conteudo">
+			<div class="servico">
+				<div class="container">
+				
+				
+					<h1><strong>Se já é cadastrada, faça o login</strong></h1>
+					
+		
+					<div class="formulario">
+						<form name="falecomigo" action="processaForm.php" method="post">
+					
+							<input id="email" name="email" type="email" placeholder="E-mail" required>
+							<input id="senha" name="senha" type="text"  placeholder="Senha"required>
+							
+							<input type="submit" name="cadastrarPerfil" value="Acessar Perfil" class="botaoEnviar"/>
+						</form>
+					</div>
+						
+					<h1><strong>Se não cadastra-se</strong></h1>
+					
+		
+					<div class="formulario">
+						<form name="falecomigo" action="processaForm.php" method="post">
+							<input id="nome" name="nome" type="text" placeholder="Nome" required>
+							<input id="email" name="email" type="email" placeholder="E-mail" required>
+							<input id="senha" name="senha" type="text"  placeholder="Senha"required>
+							<input id="confirmarSenha" name="confirmarSenha" type="text"  placeholder="Confirmar senha"required>
+							<input id="telefone" name="telefone" type="tel" placeholder="Cargo" required>
+							<input id="partido" name="partido" type="text"  placeholder="Partido"required>
+							<input id="numero" name="numero" type="text"  placeholder="Número"required>
+							<input id="estado" name="estado" type="text"  placeholder="Estado"required>
+							<textarea name="propostaGeral" id="propostaGeral" rows="5" placeholder="Proposta Geral" required></textarea>
+							<label>Proposta Feminina 1: </label>
+							<select name="propostaFem1">
+								<option value="001">Feminino</option>
+								<option value="002">Juridica</option>
+								<option value="003">Masculino</option>
+							</select>
+							<label>Proposta Feminina 2: </label>
+							<select name="propostaFem2">
+								<option value="001">Feminino</option>
+								<option value="002">Juridica</option>
+								<option value="003">Masculino</option>
+							</select>
+							<label>Proposta Feminina 3: </label>
+							<select name="propostaFem3">
+								<option value="001">Feminino</option>
+								<option value="002">Juridica</option>
+								<option value="003">Masculino</option>
+							</select>
+							<input type="submit" name="cadastrarProposta" value="Mais Propostas" class="botao-ler"/>
+							<input type="submit" name="cadastrarPerfil" value="Cadastrar Perfil" class="botaoEnviar"/>
+						</form>
+					</div>
+				</div>
+		</div>
+		</div>
+	</div>
+	
+	<footer>
+		<div class="copy">
+		
+			
+			<h4>2018</h4>
+			
+			<div class="social">
+				<a href="https://www.linkedin.com/in/danieladuarteng" target="_blank">
+					<img  src="images/linkedin.png"  title="Linkedin" width="20px" 
+					height="20px" alt="Linkedin"/>
+				</a>
+				
+				<a href="https://www.facebook.com/danieladuarteng" target="_blank">
+					<img src="images/facebook.png"  title="Facebook" width="20px" height="20px" 
+					alt="Facebook" target="_blank"/>
+				</a>
+
+				<a href="https://www.instagram.com/danieladuarteng" target="_blank">
+					<img src="images/instagram.png"  title="Instagram" width="20px" height="20px" 
+					alt="Instagram"  target="_blank"/>
+				</a>
+			</div>
+			
+		</div>
+	</footer>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108415697-1"></script>
+	
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-108415697-1');
+	</script>
+
+	<script src="_libraries/jquery-2.2.4.min.js"></script>
+	<script src="_javascript/javascript.js"></script>
+</body>
+</html>
